@@ -1,6 +1,6 @@
 import React from 'react';
 
-const API_KEY = 'AIzaSyBFtneYij6_xwoj6GBu7JK7c2yY6C6br3w';
+const API_KEY = config.env.REACT_APP_BOOKSEARCH_API_KEY;
 
 class BookSearch extends React.Component {
     constructor(props) {
