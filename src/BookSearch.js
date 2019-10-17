@@ -13,7 +13,7 @@ class BookSearch extends React.Component {
     }
     onBookSubmit = (event) => {
         event.preventDefault();
-        let url = `https://www.googleapis.com/books/v1/volumes?q=${this.state.query}&printType=${this.state.printType}&filter=${this.state.bookType}&key=${API_KEY}`
+        let url = `https://www.googleapis.com/books/v1/volumes?q=${this.state.query}&printType=${this.state.printType}&filter=${this.state.bookType}&key=${API_KEY}&maxResults=5`
         console.log(url)
         fetch(url, {
           method: 'GET',
